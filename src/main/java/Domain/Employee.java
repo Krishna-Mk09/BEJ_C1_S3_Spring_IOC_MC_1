@@ -16,4 +16,6 @@ public class Employee {
     private String Address;
     private Department employeeDepartment;
 
+    public Employee() {
+    }
 }
