@@ -9,4 +9,14 @@
 package Domain;
 
 public class Department {
+    private int departmentCode;
+    private String departmentType;
+
+    public Department(int departmentCode, String departmentType) {
+        this.departmentCode = departmentCode;
+        this.departmentType = departmentType;
+    }
+
+    public Department() {
+    }
 }
