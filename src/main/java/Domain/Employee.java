@@ -9,4 +9,11 @@
 package Domain;
 
 public class Employee {
+    private int employeeId;
+    private String employeeName;
+    private int employeeAge;
+    private String position;
+    private String Address;
+    private Department employeeDepartment;
+
 }
