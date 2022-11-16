@@ -19,4 +19,20 @@ public class Department {
 
     public Department() {
     }
+
+    public int getDepartmentCode() {
+        return departmentCode;
+    }
+
+    public void setDepartmentCode(int departmentCode) {
+        this.departmentCode = departmentCode;
+    }
+
+    public String getDepartmentType() {
+        return departmentType;
+    }
+
+    public void setDepartmentType(String departmentType) {
+        this.departmentType = departmentType;
+    }
 }
