@@ -8,6 +8,8 @@
 
 package Domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Employee {
     private int employeeId;
     private String employeeName;
@@ -18,14 +20,18 @@ public class Employee {
 
     public Employee() {
     }
+    @Autowired
+    public Employee(Department employeeDepartment) {
+        this.employeeDepartment = employeeDepartment;
+    }
 
-    public Employee(int employeeId, String employeeName, int employeeAge, String position, String address, Department employeeDepartment) {
+    public Employee(int employeeId, String employeeName, int employeeAge, String position, String address) {
         this.employeeId = employeeId;
         this.employeeName = employeeName;
         this.employeeAge = employeeAge;
         this.position = position;
         Address = address;
-        this.employeeDepartment = employeeDepartment;
+
     }
 
     public int getEmployeeId() {
