@@ -5,7 +5,6 @@
  *
  */
 
-
 package Domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +19,8 @@ public class Employee {
 
     public Employee() {
     }
+
+    // Injecting the dependency of Department class into Employee class.
     @Autowired
     public Employee(Department employeeDepartment) {
         this.employeeDepartment = employeeDepartment;
