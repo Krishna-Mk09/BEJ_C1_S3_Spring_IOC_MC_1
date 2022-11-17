@@ -39,11 +39,11 @@ public class EmployeeConfiguration {
     @Bean("empBean3")
     public Employee getEmployee2Details() {
         Employee employee3 = new Employee(getDepartment1());
-        employee3.setEmployeeAge(25);
-        employee3.setEmployeeName("Vamshi");
+        employee3.setEmployeeAge(27);
+        employee3.setEmployeeName("Nani");
         employee3.setEmployeeId(1001);
-        employee3.setPosition("Team-lead");
-        employee3.setAddress("90-23-3121/kolkata");
+        employee3.setPosition("fresher");
+        employee3.setAddress("3426/kolkata");
         return employee3;
     }
 
@@ -54,12 +54,12 @@ public class EmployeeConfiguration {
      */
     @Bean("empBean4")
     public Employee getEmployee4Details() {
-        Employee employee4 = new Employee(getDepartment1());
+        Employee employee4 = new Employee(getDepartment2());
         employee4.setEmployeeAge(25);
-        employee4.setEmployeeName("Vamshi");
-        employee4.setEmployeeId(1001);
+        employee4.setEmployeeName("krishna");
+        employee4.setEmployeeId(1004);
         employee4.setPosition("Team-lead");
-        employee4.setAddress("90-23-3121/kolkata");
+        employee4.setAddress("2345/121/kolkata");
         return employee4;
     }
 
@@ -72,5 +72,16 @@ public class EmployeeConfiguration {
     @Bean
     public Department getDepartment1() {
         return new Department(1111, "IT");
+    }
+
+    /**
+     * The function getDepartment2() returns a new Department object with the values 1231 and "HR" for the id and name
+     * fields respectively
+     *
+     * @return A new instance of Department
+     */
+    @Bean
+    public Department getDepartment2() {
+        return new Department(1231, "HR");
     }
 }
